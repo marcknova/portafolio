@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(75, 34, 34, 0.6),rgba(0, 0, 0, 0.6)),url(../img/montain.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 720px;
+    color: #cac4b0;
+}
+  
+.title {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    color: #59C3C3;
+}
+
+.Otomanope {
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+/* .fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+} */
+
+.listOne {
+    margin-left: 60%;
+}
+
+.listOne li {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 50px;
+}  
+
+.listTwo li{
+    display: inline-block;
+}
+
+a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #cac4b0;
+}
+
+a:hover {
+    color: #FFFFFF;
+} 
+
+/* Img User */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-user {
+    width: 100%;
+    height: 100%;
+}
+
+.containerImg {
+    width: 450px;
+    height: 450px;
+    margin-left: 33%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+/* .transparent {
+    position: absolute;
+    background:  #59C3C3;
+    width: 390px;
+    height: 360px;
+    top: 123px;
+    border-radius: 50%;
+    opacity: 0.2;
+    z-index: 1;
+} */
+
+.img1 {
+    width: 310px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+    border: 6px solid #59C3C3;
+    z-index: 3;
+}
+
+.data {
+    position: absolute;
+    top: 300px;
+    background: #292929;
+    width: 339px;
+    height: 340px;
+    margin-left: 37%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.data h1 {
+    margin-top: 160px;
+    font-size: 35px;
+}
+
+.data span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+i {
+    margin: 8px;
+    margin-top: 25px;
+    font-size: 35px;
+}
+
+.icon1:hover {
+    color: #59C3C3;
+}
+/* https://shop.entheosweb.com/landing-page-templates-type/85201.html */
+
+section {
+      width: 100%;
+      height: auto;
+      background: #292929;
+  }
+
+.container {
+    background: #292929 !important;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-auto-rows: 50rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 35rem), 1fr));
+}
+
+.me {
+    text-align: center;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+
+.img2 {
+      width: 380px;
+      height: 560px;
+      margin-top: 100px;
+      margin-left: 120px;
+  }
+
+.img2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.descripction {
+    height: 100%;
+    margin: 100px 120px 0 -80px;
+    color: #FFFFFF;
+    line-height: 1.5;
+}
+
+.skills {
+    background: #1F1F1F;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content-icon {
+    background: #292929;
+    margin: 10px;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer; 
+    font-size: 14px;
+}
+
+.grid-skills {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 6.8rem;
+    grid-template-columns: repeat(auto-fill, minmax(6.6rem, 1fr));
+}
+
+.grid-skills .fas {
+    margin-top: 15px;
+    font-size: 33px;
+}
+
+.grid-skills .fab {
+    margin-top: 15px;
+}
+
+.grid-skills img {
+    width: 44px;
+    height: 44px;
+    margin-top: 15px;
+}
+
+.cv {
+    margin-top: -150px;
+    text-align: center;
+}
+
+.cv button {
+    width: 180px;
+    height: 40px;
+    margin: 50px;
+    background: #292929;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    border: 0;
+}
+
+button .fas {
+    font-size: 15px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-left: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.section2 {
+    background: #1F1F1F;
+    width: 100%;
+    height: 100%;
+}
+
+.container-2 {
+    padding: 20px;
+}
+
+.tittleSkill {
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-skills {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-auto-rows: 10rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    margin-left: 10%;
+}
+
+
+.barProgress {
+    width: 65%;
+    margin: 10px 0 30px 20px ;
+    border-radius: 15px;
+    border: 2px solid #FFFFFF;
+    text-align: center;
+}
+
+.progress1 {
+    width: 90%;
+    border-radius: 15px;
+    background: #59C3C3;
+}
+
+.progress2 {
+    width: 70%;
+    border-radius: 15px;
+    background: #59C3C3;
+}
+
+.progress3 {
+    width: 40%;
+    border-radius: 15px;
+    background: #59C3C3;
+}
+
+.progress4 {
+    width: 30%;
+    border-radius: 15px;
+    background: #59C3C3;
+}
+
+.progress5 {
+    width: 20%;
+    border-radius: 15px;
+    background: #59C3C3;
+}
+
+.progress6 {
+    width: 20%;
+    border-radius: 15px;
+    background: #59C3C3;
+}
+
+.tittleSkill {
+    font-weight: 700;
+}
+
+.textSkill {
+    margin: 20px 0 25px 50px;
+    color: #FFFFFF;
+}
+
+.section3 {
+    width: auto;
+    height: 100%;
+    padding: 1px;
+    background: #292929;
+}
+
+.containerProjects {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 25px;
+    background: #1F1F1F;
+}
+
+.tittleProjects {
+    padding: 10px;
+}
+
+.tittleProject {
+    font-size: 40px;
+    margin: 30px 0 30px 0;
+}
+
+.list-projects {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 17rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+}
+
+article {
+    margin: 5px;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects figure {
+    position: relative;
+    height: 270px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.projects figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.projects figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.projects figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.projects figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.projects figure:hover > img {
+    transform: scale(1.3);
+}
+
+.projects figure .capa h3{
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+} 
+
+.projects figure .capa p {
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background: #1F1F1F;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    padding: 10px;
+}
+
+@media (min-width: 1281px) {
+  
+   .cv {
+       margin: auto;
+   }
+    
+  }  
+
+@media (min-width: 1118px) and (max-width: 1280px ) {
+
+    .listOne {
+        margin-left: 56%;
+    }
+
+    .img2 {
+        margin: auto;
+    }
+
+    .descripction {
+        margin: 100px 20px 0 -50px;
+    }
+
+    .cv {
+        margin: 0 auto;
+    }
+
+  }
+
+@media (min-width: 800px)  and (max-width: 1118px){
+    
+    .title {
+        margin-top: 10px;
+    }
+
+    .transparent {
+        top: 80px;
+    }
+
+    .data {
+        top: 260px;
+        margin-left: 38.3%;
+    }
+
+    .data h1 {
+        margin-top: 190px;
+    }
+
+    .listOne li {
+        text-align: center;
+        font-size: 18px;
+        margin-left: 5%;
+    }
+
+    .img2 {
+        margin: auto;
+    }
+
+    .descripction {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }    
+/*670*/
+}
+
+@media (max-width: 800px) {
+
+    .title {
+        top: 0;
+        left: 25px;
+    }
+
+    .nav-menu ul.listOne {
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #292929;
+        width: 50%;
+        height: 100%;
+        opacity: .9;
+        z-index: 4;
+        transform: translateX(-900px);
+        transition: .5s ease-in-out;
+    }
+
+    .nav-menu ul.listOne.show {
+        transform: translateX(-500px);
+    }
+
+    .containerImg {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img1 {
+        width: 300px;
+        height: 300px;    
+    }
+
+    .data {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .listOne li {
+        text-align: center;
+        font-size: 18px;
+        margin-left: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: auto;
+    }
+
+    .img2 {
+        margin: auto;
+    }
+
+    .descripction {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+}
+
+    .cv {
+        margin: 100px 0 0 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    .containerImg {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img1 {
+        width: 250px;
+        height: 250px;    
+    }
+
+    .data {
+        width: 280px;
+        height: 300px;
+        top: 280px;
+    }
+
+    .data h1 {
+        margin-top: 130px;
+        font-size: 30px;
+    }
+    
+    .data span {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    i {
+        margin: 8px;
+        margin-top: 25px;
+        font-size: 30px;
+    }
+
+    .img2 {
+        width: 320px;
+        height: 500px;
+    }
+
+    .descripction {
+        text-align: justify;
+    }
+
+    .grid-skills .fas {
+        margin-top: 15px;
+        font-size: 40px;
+    }
+    
+    .grid-skills .fab {
+        margin-top: 15px;
+    }
+    
+    .grid-skills img {
+        width: 44px;
+        height: 44px;
+        margin-top: 15px;
+    }
+
+    .containerProjects {
+        width: 100%;
+    }
+
+    .cv {
+        margin-top: 250px;
+    }
+  }
