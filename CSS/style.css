@@ -367,10 +367,8 @@ button {
 .containerProjects {
   width: 100%;
   height: 100%;
-  margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  padding: 25px;
   background: #1f1f1f;
 }
 
@@ -391,9 +389,9 @@ button {
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
 }
 
-article {
-  margin: 5px;
-}
+/* article {
+  margin: 2px;
+} */
 
 .projects {
   width: 100%;
