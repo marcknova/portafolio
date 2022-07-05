@@ -6,14 +6,6 @@
 }
 
 header {
-  /* https://unsplash.it/1800/800?image=893 */
-  /* background-image: linear-gradient(rgba(75, 34, 34, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/montain.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 720px;
-  color: #cac4b0; */
   height: 100vh;
 }
 
@@ -27,12 +19,6 @@ header {
 .Otomanope {
   font-family: "Otomanopee One", sans-serif;
 }
-
-/* .fixed {
-    width: 100%;
-    position: fixed;
-    top: 0;
-} */
 
 .nav-menu {
   background: #1f1f1f;
@@ -54,9 +40,6 @@ header {
   border: 1px solid #292929;
 }
 
-/* .listTwo li {
-  display: inline-block;
-} */
 
 a {
   margin-top: 15px;
@@ -78,40 +61,6 @@ a {
   text-decoration: none;
 }
 
-.img-user {
-  width: 100%;
-  height: 100%;
-}
-
-/* .containerImg {
-  width: 450px;
-  height: 450px;
-  margin-left: 33%;
-  margin-top: 3%;
-  display: flex;
-  justify-content: center;
-} */
-
-/* .transparent {
-    position: absolute;
-    background:  #59C3C3;
-    width: 390px;
-    height: 360px;
-    top: 123px;
-    border-radius: 50%;
-    opacity: 0.2;
-    z-index: 1;
-} */
-
-/* .img1 {
-  width: 310px;
-  height: 300px;
-  border-radius: 50%;
-  margin: auto;
-  border: 6px solid #59c3c3;
-  z-index: 3;
-} */
-
 .data {
   background: #1D1D1D;
   width: 100%;
@@ -122,43 +71,32 @@ a {
 .data h1 {
   /* margin-top: 160px; */
   color: #ffffff;
-  margin: 60px 0 0 50px;
+  margin: 30px 0 0 50px;
 }
 
 .data h1 span {
-  font-size: 70px;
-  display: block;
-  /* white-space: nowrap;
-  border-right: 4px solid;
-  width: 20ch;
-
-  animation: typing 2s steps(12), blink .5s infinite step-end alternate;
-  overflow: hidden; */
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 60px;
 }
 
-/* @keyframes typing {
-  from { width: 0; }
+.tittleInicio {
+  width: 90%;
 }
 
-@keyframes blink {
-  50% { border-color: transparent; }
-} */
-
-.data h1 .skill {
+.block {
   display: block;
+}
+
+.skill {
+  font-weight: 500;
   font-size: 30px;
-  font-weight: 400;
-  color: #909096;
+  color:#8d8d8d
 }
 
 i {
   margin: 8px;
   margin-top: 25px;
   font-size: 35px;
-}
-
-.icon1:hover {
-  color: #59c3c3;
 }
 /* https://shop.entheosweb.com/landing-page-templates-type/85201.html */
 
@@ -172,10 +110,12 @@ section {
   background: #292929 !important;
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-auto-flow: dense;
-  grid-auto-rows: 50rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 35rem), 1fr));
+  display: flex;
+}
+
+.listTwo {
+  display: flex;
+  margin: 10px 0 10px 0;
 }
 
 .me {
@@ -185,83 +125,37 @@ section {
   margin-bottom: 15px;
 }
 
-.img2 {
-  width: 380px;
-  height: 560px;
-  margin-top: 100px;
-  margin-left: 120px;
-}
-
-.img2 img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
 .descripction {
+  width: 50%;
   height: 100%;
-  margin: 100px 120px 0 -80px;
   color: #ffffff;
   line-height: 1.5;
+  padding: 10px;
+  margin: 50px 30px;
 }
 
 .skills {
-  background: #1f1f1f;
+  width: 50%;
   height: auto;
-  text-align: center;
-  border-radius: 10px;
-  margin-top: 20px;
-  padding: 15px;
+  color: #ffffff;
+  margin: 50px 0 20px 60px;
+  padding: 10px;
 }
 
 .skills h2 {
-  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.content-icon {
-  background: #292929;
-  margin: 10px;
-  margin-left: 15px;
-  text-align: center;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.grid-skills {
-  display: grid;
-  gap: 1rem;
-  grid-auto-flow: dense;
-  grid-auto-rows: 6.8rem;
-  grid-template-columns: repeat(auto-fill, minmax(6.6rem, 1fr));
-}
-
-.grid-skills .fas {
-  margin-top: 15px;
-  font-size: 33px;
-}
-
-.grid-skills .fab {
-  margin-top: 15px;
-}
-
-.grid-skills img {
-  width: 44px;
-  height: 44px;
-  margin-top: 15px;
-}
-
 .cv {
-  margin-top: -150px;
   text-align: center;
+  height: 100px;
 }
 
 .cv button {
   width: 180px;
   height: 40px;
-  margin: 50px;
+  margin: 10px;
   background: #292929;
   color: #ffffff;
   font-size: 15px;
@@ -297,55 +191,13 @@ button {
 }
 
 .container-skills {
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-auto-flow: dense;
-  grid-auto-rows: 10rem;
+  grid-auto-rows: 5rem;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-  margin-left: 10%;
-}
-
-.barProgress {
-  width: 65%;
-  margin: 10px 0 30px 20px;
-  border-radius: 15px;
-  border: 2px solid #ffffff;
-  text-align: center;
-}
-
-.progress1 {
-  width: 90%;
-  border-radius: 15px;
-  background: #08FDD8;
-}
-
-.progress2 {
-  width: 70%;
-  border-radius: 15px;
-  background: #08FDD8;
-}
-
-.progress3 {
-  width: 40%;
-  border-radius: 15px;
-  background: #08FDD8;
-}
-
-.progress4 {
-  width: 30%;
-  border-radius: 15px;
-  background: #08FDD8;
-}
-
-.progress5 {
-  width: 20%;
-  border-radius: 15px;
-  background: #08FDD8;
-}
-
-.progress6 {
-  width: 20%;
-  border-radius: 15px;
-  background: #08FDD8;
+  margin: 3rem 0 0 0;
 }
 
 .tittleSkill {
@@ -353,15 +205,59 @@ button {
 }
 
 .textSkill {
-  margin: 20px 0 25px 50px;
+  margin: 20px 0 25px 0;
+  font-size: 17px;
   color: #ffffff;
 }
+
+.content {
+  height: 80px;
+}
+
+.barProgress {
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  margin: 10px 0 5px 0;
+  height: 8px;
+  width: 70%;
+}
+
+.progress1 {
+  width: 90%;
+  background: #08FDD8;
+}
+
+.progress2 {
+  width: 70%;
+  background: #08FDD8;
+}
+
+.progress3 {
+  width: 60%;
+  background: #08FDD8;
+}
+
+.progress4 {
+  width: 50%;
+  background: #08FDD8;
+}
+
+.progress5 {
+  width: 60%;
+  background: #08FDD8;
+}
+
+.progress6 {
+  width: 50%;
+  background: #08FDD8;
+}
+
 
 .section3 {
   width: auto;
   height: 100%;
   padding: 1px;
-  background: #1D1D1D;
+  background: #1f1f1f;;
 }
 
 .containerProjects {
@@ -386,7 +282,7 @@ button {
   display: grid;
   grid-auto-flow: dense;
   grid-auto-rows: auto; /*18rem*/
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
 }
 
 /* article {
