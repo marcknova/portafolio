@@ -20,6 +20,10 @@ header {
   font-family: "Otomanopee One", sans-serif;
 }
 
+.mr {
+  margin-right: 8px;
+}
+
 .nav-menu {
   background: #1f1f1f;
   width: 100%;
@@ -152,10 +156,9 @@ section {
   height: 100px;
 }
 
-.cv button {
+.cv a {
   width: 180px;
-  height: 40px;
-  margin: 10px;
+  padding: 10px;
   background: #292929;
   color: #ffffff;
   font-size: 15px;
@@ -163,14 +166,14 @@ section {
   border: 0;
 }
 
-button .fas {
-  font-size: 15px;
+.cv a .fas {
+  font-size: 17px;
   color: #ffffff;
   margin: 0;
   margin-left: 5px;
 }
 
-button {
+a {
   cursor: pointer;
 }
 
@@ -278,11 +281,18 @@ button {
   margin: 30px 0 30px 55px;
 }
 
+.descriptionProjects {
+  padding: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 30px 0 30px 50px;
+}
+
 .list-projects {
   display: grid;
   grid-auto-flow: dense;
   grid-auto-rows: auto; /*18rem*/
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
 }
 
 /* article {
@@ -433,7 +443,6 @@ footer h3 {
 
 @media (max-width: 800px) {
   .title {
-    top: 0;
     left: 25px;
   }
 
@@ -467,14 +476,6 @@ footer h3 {
     height: 300px;
   }
 
-  .data {
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .listOne li {
     text-align: center;
     font-size: 18px;
@@ -493,38 +494,36 @@ footer h3 {
     height: 100%;
     margin: auto;
   }
-
-  .cv {
-    margin: 100px 0 0 0;
-  }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .containerImg {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .img1 {
-    width: 250px;
-    height: 250px;
-  }
+@media (min-width: 280px) and (max-width: 480px) {
 
   .data {
-    width: 280px;
-    height: 300px;
-    top: 280px;
+    padding: 50px 25px;
   }
 
   .data h1 {
-    margin-top: 130px;
-    font-size: 30px;
+    margin: 0;
+    margin-top: 5rem;
   }
 
-  .data span {
-    font-size: 18px;
-    font-weight: 700;
+  .data h1 span {
+    font-size: 1.5rem;
+  }
+
+  .skill {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .skills {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 20px 0;
+  }
+
+  .barProgress {
+    width: 100%;
   }
 
   i {
@@ -539,12 +538,24 @@ footer h3 {
   }
 
   .descripction {
+    margin-top: 5rem;
     text-align: justify;
+  }
+
+  .tittleProject {
+    margin: 30px 20px 30px 30px;
+    font-size: 30px;
+  }
+
+  .descriptionProjects {
+    margin: 20px 20px 30px 20px;
+    text-align: justify;
+    font-size: 0.8rem;
   }
 
   .grid-skills .fas {
     margin-top: 15px;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .grid-skills .fab {
@@ -559,9 +570,20 @@ footer h3 {
 
   .containerProjects {
     width: 100%;
+    margin-bottom: 0;
   }
 
-  .cv {
-    margin-top: 250px;
+  .projects figure {
+    width: auto;
+    height: 200px;
   }
+
+  .listTwo {
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
 }
