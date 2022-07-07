@@ -381,23 +381,41 @@ footer h3 {
   padding: 10px;
 }
 
-@media (min-width: 1281px) {
-  .cv {
-    margin: auto;
-  }
-}
 
-@media (min-width: 1118px) and (max-width: 1280px) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .list-projects {
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+    }
+
+    .cv {
+      margin: auto;
+    }
+    }
+
+@media (min-width: 600px) and (max-width: 1199px) {
+      .list-projects {
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+      }
+    }
+
+@media (min-width: 1119px) and (max-width: 1199px) {
+
   .listOne {
     margin-left: 56%;
   }
 
-  .img2 {
-    margin: auto;
+  .descripction {
+    margin-left: 2rem;
+    margin-top: 2rem;
   }
 
-  .descripction {
-    margin: 100px 20px 0 -50px;
+  .containerProjects {
+    margin-bottom: 0;
+  }
+
+  .me {
+    margin-top: 4.2rem;
   }
 
   .cv {
@@ -412,11 +430,6 @@ footer h3 {
 
   .transparent {
     top: 80px;
-  }
-
-  .data {
-    top: 260px;
-    margin-left: 38.3%;
   }
 
   .data h1 {
@@ -496,6 +509,7 @@ footer h3 {
   }
 }
 
+
 @media (min-width: 280px) and (max-width: 480px) {
 
   .data {
@@ -508,11 +522,11 @@ footer h3 {
   }
 
   .data h1 span {
-    font-size: 1.5rem;
+    font-size: calc(0.5em + 0.5vw)
   }
 
   .skill {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
   }
 
@@ -544,13 +558,13 @@ footer h3 {
 
   .tittleProject {
     margin: 30px 20px 30px 30px;
-    font-size: 30px;
+    font-size: 2em;
   }
 
   .descriptionProjects {
     margin: 20px 20px 30px 20px;
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
 
   .grid-skills .fas {
@@ -576,6 +590,14 @@ footer h3 {
   .projects figure {
     width: auto;
     height: 200px;
+  }
+
+  .me {
+    font-size: 1.5em;
+  }
+
+  .descripction div p {
+    font-size: 1em;
   }
 
   .listTwo {
