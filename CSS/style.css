@@ -41,7 +41,6 @@ header {
   margin-left: 0;
 }
 
-
 .listOne {
   display: flex;
   flex-direction: column;
@@ -543,6 +542,8 @@ footer h3 {
   .listOne {
     display: flex;
     flex-direction: row;
+    width: auto;
+    margin-top: 0;
     margin-left: 60%;
   }
   
