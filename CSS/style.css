@@ -512,6 +512,11 @@ footer h3 {
 
 @media (min-width: 280px) and (max-width: 480px) {
 
+  .title {
+    font-size: 1.4em;
+    margin: 0.1em;
+  }
+
   .data {
     padding: 50px 25px;
   }
@@ -598,6 +603,7 @@ footer h3 {
 
   .descripction div p {
     font-size: 1em;
+    margin: 1em;
   }
 
   .listTwo {
@@ -623,5 +629,10 @@ footer h3 {
   .container {
     flex-direction: column;
   }
+
+  .container-skills {
+    margin: 2em;
+  }
+
 
 }
