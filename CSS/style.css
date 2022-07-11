@@ -141,10 +141,10 @@ i {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
-  margin: 0.8em 1em 0.8em 0;
+  margin: 0.8em 1.3em 0.8em 0;
 }
 
 .button-menu span {
@@ -620,6 +620,7 @@ footer h3 {
     width: auto;
     height: auto;
     margin: 0;
+    text-align: center;
   }
 
   .skill {
