@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/effects.css">
+    <script type="module" src="./JS/blob.js"></script>
+    <!-- <link rel="stylesheet" href="./Sass/blob.css"> -->
     <title>Portafolio</title>
 </head>
 
@@ -36,47 +38,63 @@
             <span></span>
         </button>
         <div class="data">
-            <h1>
-                <span class="block">
-                    <>
-                </span>
-                <span class="hvr-buzz-out">H</span>
-                <span class="hvr-buzz-out">i</span>
-                <span class="hvr-buzz-out">,</span>
-                <br>
-                <span class="hvr-buzz-out">I'</span>
-                <span class="hvr-buzz-out mr">m</span>
-                <span class="hvr-buzz-out">M</span>
-                <span class="hvr-buzz-out">a</span>
-                <span class="hvr-buzz-out">r</span>
-                <span class="hvr-buzz-out">c</span>
-                <span class="hvr-buzz-out mr">o</span>
-                <span class="hvr-buzz-out">A</span>
-                <span class="hvr-buzz-out">n</span>
-                <span class="hvr-buzz-out">t</span>
-                <span class="hvr-buzz-out">o</span>
-                <span class="hvr-buzz-out">n</span>
-                <span class="hvr-buzz-out">i</span>
-                <span class="hvr-buzz-out">o</span>
-                <span class="hvr-buzz-out">,</span>
-                <br>
-                <span class="hvr-buzz-out">W</span>
-                <span class="hvr-buzz-out">e</span>
-                <span class="hvr-buzz-out mr">b</span>
-                <span class="hvr-buzz-out">D</span>
-                <span class="hvr-buzz-out">e</span>
-                <span class="hvr-buzz-out">v</span>
-                <span class="hvr-buzz-out">e</span>
-                <span class="hvr-buzz-out">l</span>
-                <span class="hvr-buzz-out">o</span>
-                <span class="hvr-buzz-out">p</span>
-                <span class="hvr-buzz-out">e</span>
-                <span class="hvr-buzz-out">r</span>
-                <span class="block">
-                    <\>
-                </span>
-                <p class="skill">Front End Developer</span>
-            </h1>
+            <div class="content-name">
+                <h1>
+                    <span class="block">
+                        <>
+                    </span>
+                    <span class="hvr-buzz-out">H</span>
+                    <span class="hvr-buzz-out">i</span>
+                    <span class="hvr-buzz-out">,</span>
+                    <br>
+                    <span class="hvr-buzz-out">I'</span>
+                    <span class="hvr-buzz-out mr">m</span>
+                    <span class="hvr-buzz-out">M</span>
+                    <span class="hvr-buzz-out">a</span>
+                    <span class="hvr-buzz-out">r</span>
+                    <span class="hvr-buzz-out">c</span>
+                    <span class="hvr-buzz-out mr">o</span>
+                    <span class="hvr-buzz-out">A</span>
+                    <span class="hvr-buzz-out">n</span>
+                    <span class="hvr-buzz-out">t</span>
+                    <span class="hvr-buzz-out">o</span>
+                    <span class="hvr-buzz-out">n</span>
+                    <span class="hvr-buzz-out">i</span>
+                    <span class="hvr-buzz-out">o</span>
+                    <span class="hvr-buzz-out">,</span>
+                    <br>
+                    <span class="hvr-buzz-out">W</span>
+                    <span class="hvr-buzz-out">e</span>
+                    <span class="hvr-buzz-out mr">b</span>
+                    <span class="hvr-buzz-out">D</span>
+                    <span class="hvr-buzz-out">e</span>
+                    <span class="hvr-buzz-out">v</span>
+                    <span class="hvr-buzz-out">e</span>
+                    <span class="hvr-buzz-out">l</span>
+                    <span class="hvr-buzz-out">o</span>
+                    <span class="hvr-buzz-out">p</span>
+                    <span class="hvr-buzz-out">e</span>
+                    <span class="hvr-buzz-out">r</span>
+                    <span class="block">
+                        <\>
+                    </span>
+                    <p class="skill">Front End Developer</span>
+                </h1>
+            </div>
+            <div class="content-img">
+                <div id="imgProfile" class="img-profile">
+                    <svg viewBox="0 0 200 200">
+                        <defs>
+                          <clipPath id="blob"><path></path></clipPath>
+                        </defs>
+                        <image x="0" y="0" width="100%" height="100%" clip-path="url(#blob)" preserveAspectRatio="xMidYMid slice" xlink:href="./img/wp9532713.png"></image>
+                      </svg>
+                    <!-- <div class="wrap">
+                        <div class="circle">
+                          <img src='https://images.unsplash.com/photo-1547542928-dd9bc5371279?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+                          </div>
+                      </div> -->
+            </div>
         </div>
     </header>
 
@@ -205,7 +223,7 @@
                     </div>
                     <div class="socilaNetworks">
                         <ul class="listTwo">
-                            <li><a href="https://www.facebook.com/" target="_blank"><i
+                            <li><a href="https://www.facebook.com/" target="_blank" rel=”noopener”><i
                                         class="fab fa-facebook-square hvr-grow icon1"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/marco-antonio-monterrosas-temoxtle-58b1661a2/"><i class="fab fa-linkedin"></i></a></li>
                             <li><a href="https://github.com/marcknova" target="_blank"><i
