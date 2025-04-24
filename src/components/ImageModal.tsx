@@ -3,9 +3,11 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+// @ts-expect-error android
 import "swiper/css";
+// @ts-expect-error android
 import "swiper/css/navigation";
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaCube } from "react-icons/fa";
 import {
   SiExpo,
   SiFirebase,
@@ -15,6 +17,8 @@ import {
   SiKotlin,
   SiTailwindcss,
   SiFigma,
+  SiReactquery,
+  SiRedhat,
 } from "react-icons/si";
 
 const techIcons: { [key: string]: JSX.Element } = {
@@ -30,21 +34,23 @@ const techIcons: { [key: string]: JSX.Element } = {
     <SiTailwindcss className="text-blue-400 text-2xl md:text-3xl" />
   ),
   Figma: <SiFigma className="text-black text-2xl md:text-3xl" />,
+  React: <FaReact className="text-cyan-500 text-2xl md:text-3xl" />,
+  Recharts: <SiRedhat className="text-orange-500 text-2xl md:text-3xl" />,
+  "React Query": (
+    <SiReactquery className="text-pink-600 text-2xl md:text-3xl" />
+  ),
+  TanStackQuery: (
+    <SiReactquery className="text-pink-600 text-2xl md:text-3xl" />
+  ),
+  "shadcn/ui": <FaCube className="text-gray-700 text-2xl md:text-3xl" />,
 };
 
 interface ImageModalProps {
   images: string[];
-  title: string;
-  description: string;
   technologies: string;
 }
 
-export default function ImageModal({
-  images,
-  title,
-  description,
-  technologies,
-}: ImageModalProps) {
+export default function ImageModal({ images, technologies }: ImageModalProps) {
   const [isOpen, setIsOpen] = useState(false);
   const techList = technologies.split(", ");
 
@@ -56,6 +62,7 @@ export default function ImageModal({
       >
         <img
           src={images[0]}
+          loading="lazy"
           className="w-full h-full object-contain rounded-2xl transition-transform duration-300 ease-in-out group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
@@ -80,11 +87,11 @@ export default function ImageModal({
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="relative bg-white p-6 rounded-lg shadow-xl max-w-6xl w-full z-10"
+              className="relative bg-white rounded-lg p-3 shadow-xl max-w-7xl w-full z-10"
             >
               <DialogPanel>
-                <div className="flex flex-col md:flex-row md:h-[570px]">
-                  <div className="w-full md:w-[60%] h-full flex justify-center items-center">
+                <div className="flex flex-col md:flex-row md:h-[750px]">
+                  <div className="w-full md:w-[100%] md:h-full flex justify-center items-center">
                     <Swiper
                       modules={[Navigation]}
                       navigation
@@ -98,7 +105,8 @@ export default function ImageModal({
                         >
                           <motion.img
                             src={img}
-                            className="rounded-lg w-full h-auto max-h-[600px] object-contain"
+                            loading="lazy"
+                            className="rounded-lg w-full h-full max-h-[750px] object-contain"
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -50 }}
@@ -108,28 +116,20 @@ export default function ImageModal({
                       ))}
                     </Swiper>
                   </div>
-
-                  <div className="w-full md:w-[40%] p-6 flex flex-col items-center justify-center">
-                    <h1 className="text-2xl font-semibold">{title}</h1>
-                    <p className="mt-3 text-gray-700">{description}</p>
-
-                    <div className="mt-4">
-                      <h2 className="text-lg font-semibold text-gray-600">
-                        Tecnologías utilizadas:
-                      </h2>
-                      <div className="flex gap-4 md:mt-2 mt-5">
-                        {techList.map((tech, index) => (
-                          <div key={index} title={tech}>
-                            {techIcons[tech] || (
-                              <span className="text-gray-500">{tech}</span>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </DialogPanel>
+
+              <div className="md:absolute bottom-5 right-10 flex justify-center z-10">
+                <div className="flex gap-4 md:mt-2 mt-5">
+                  {techList.map((tech, index) => (
+                    <div key={index} title={tech}>
+                      {techIcons[tech] || (
+                        <span className="text-gray-500">{tech}</span>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </motion.div>
           </Dialog>
         )}

@@ -1,16 +1,24 @@
-import ImageModal from "../../components/ImageModal";
-import BlobEffect from "../../components/BlobEffect";
 import { Proyectos } from "../../../utils/Proyectos";
-import { FaGithub, FaYoutube, FaGooglePlay } from "react-icons/fa";
+import { FaGithub, FaYoutube, FaGooglePlay, FaGlobe } from "react-icons/fa";
 import { SiFigma, SiNpm, SiAdobeacrobatreader } from "react-icons/si";
+import { lazy, Suspense } from "react";
+import Profile from "/profile.png";
 
 const Home = () => {
+  const ImageModal = lazy(() => import("../../components/ImageModal"));
+
   return (
     <div className="w-full md:h-screen p-0 m-0">
       <div className="w-full h-2 bg-sky-500"></div>
-      <div className="bg-[#030918] w-full h-full p-10 flex md:flex-row-reverse flex-col-reverse justify-evenly items-center ">
-        <div className="md:w-80 md:h-80 md:mr-20">
-          <BlobEffect />
+      <div className="bg-[#030918] w-full h-full p-10 flex lg:flex-row-reverse flex-col-reverse justify-evenly items-center ">
+        <div className="md:w-80 md:h-80 lg:mr-20">
+          <div className="relative md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-3xl  md:my-0 my-10 overflow-hidden flex items-center justify-center">
+            <img
+              src={Profile}
+              className="w-full h-full object-cover"
+              alt="Profile Picture"
+            />
+          </div>
         </div>
         <div className="max-w-[45rem]">
           <h1 className="text-white md:text-left text-center md:text-5xl my-5 font-bold">
@@ -29,19 +37,19 @@ const Home = () => {
           <h2 className="font-2xl font-semibold">Mis Projectos</h2>
           <p>Lista de projectos en los que he trabajado</p>
         </div>
-        <div className="md:px-10 md:mx-72 flex flex-wrap">
+        <div className="md:px-10 justify-center flex flex-wrap">
           {Proyectos.map((proyecto, index) => (
             <div
               key={index}
-              className="w-[28rem] md:h-[43rem] h-[48rem] my-5 shadow-sm shadow-blue-300 p-5 rounded-2xl mx-5 relative flex flex-col justify-between"
+              className="xl:w-[28rem] md:h-[43rem] h-[48rem] my-5 shadow-sm shadow-blue-300 p-5 rounded-2xl mx-5 relative flex flex-col justify-between"
             >
               <div className="relative w-full rounded-2xl overflow-hidden group">
-                <ImageModal
-                  images={proyecto.images}
-                  title={proyecto.title}
-                  description={proyecto.description}
-                  technologies={proyecto.technologies}
-                />
+                <Suspense>
+                  <ImageModal
+                    images={proyecto.images}
+                    technologies={proyecto.technologies}
+                  />
+                </Suspense>
               </div>
               <div className="mx-3 md:p-1">
                 <h1 className="font-bold md:text-xl md:my-0 my-3">
@@ -107,17 +115,26 @@ const Home = () => {
                     <SiAdobeacrobatreader className="text-red-600 text-3xl w-7 h-7 hover:text-red-400 transition" />
                   </a>
                 )}
+                {proyecto.links?.web && (
+                  <a
+                    href={proyecto.links.web}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGlobe className="text-black w-7 h-7 hover:text-gray-600 transition" />
+                  </a>
+                )}
               </div>
             </div>
           ))}
         </div>
       </div>
       <div className="bg-[#030918]">
-        <div className=" text-white h-64 p-10 flex md:flex-row flex-col justify-between items-center px-10 md:mx-72 ">
+        <div className=" text-white h-64 p-10 flex md:flex-row flex-col md:justify-between items-center px-10 md:mx-36 lg:mx-72">
           <div>
             <h1 className="font-semibold text-lg"> © 2025 marck </h1>
           </div>
-          <div>
+          <div className="md:my-0 my-20">
             <a
               href={"https://github.com/marcknova"}
               target="_blank"
