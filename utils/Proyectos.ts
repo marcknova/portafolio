@@ -50,7 +50,7 @@ export const Proyectos = [
       figma:
         "https://www.figma.com/design/LDNOp9mKx6WZF5UfqNQqM9/Gougo-UI-UX?node-id=1403-4137",
       googlePlay:
-        "https://play.google.com/store/apps/details?id=mx.neaxis.gougo&pcampaignid=web_share",
+        "https://play.google.com/store/apps/details?id=mx.neaxis.promotor&hl=en",
     },
   },
   {
