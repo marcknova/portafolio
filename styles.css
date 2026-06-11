@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  clip-path: circle(150% at 50% 50%);
+  transition: clip-path 1.2s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+#loading-screen.contracting {
+  clip-path: circle(39px at 50% 50%);
+}
+
+#spinner-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#spinner-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-top-color: #fff;
+  border-right-color: #fff;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#spinner-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+#floating-circle {
+  position: fixed;
+  z-index: 99;
+  border-radius: 50%;
+  background-color: #000;
+  width: 78px;
+  height: 78px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  overflow: hidden;
+
+  transition:
+    width 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    height 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    left 0.9s cubic-bezier(0.4, 0, 0.2, 1),
+    top 0.9s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.9s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.5s ease;
+}
+
+#floating-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.4s;
+}
+
+#floating-circle img.visible {
+  opacity: 1;
+}
+
+#main-content {
+  display: none;
+  min-height: 100vh;
+}
+
+#hero {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+#profile-placeholder {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  visibility: hidden;
+}
+
+#hero-text {
+  max-width: 500px;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+#hero-text.visible {
+  opacity: 1;
+}
+
+#hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+#hero-text p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.7;
+}

@@ -1,16 +1,39 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/banana.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+    <div id="loading-screen">
+        <div id="spinner-wrapper">
+            <div id="spinner-ring"></div>
+            <div id="spinner-dot"></div>
+        </div>
+    </div>
+
+    <div id="floating-circle">
+        <img id="profile-img" src="" alt="Marco Antonio Monterrosas" />
+    </div>
+
+    <div id="main-content">
+        <section id="hero">
+            <div id="profile-placeholder"></div>
+            <div id="hero-text">
+                <h1>&lt;Hello! Soy Marco Antonio Monterrosas&gt;</h1>
+                <p>
+                    Soy un desarrollador de software con experiencia en el desarrollo de
+                    aplicaciones móviles y web, especializado en React Native, Expo,
+                    TypeScript y PHP.
+                </p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
