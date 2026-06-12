@@ -94,6 +94,83 @@ body {
   opacity: 1;
 }
 
+#profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#profile-reflection-wrapper {
+  width: 260px;
+  height: 130px;
+  overflow: hidden;
+  margin-top: 6px;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45) 0%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45) 0%,
+    transparent 100%
+  );
+}
+
+#profile-reflection-wrapper.visible {
+  opacity: 1;
+}
+
+#reflection-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: scaleY(-1);
+}
+
+#top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  z-index: 98;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  overflow: hidden;
+}
+
+#top-bar.visible {
+  opacity: 1;
+}
+
+#top-bar-shimmer {
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    transparent 100%
+  );
+  animation: shimmer 10s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    left: 130%;
+  }
+}
+
 #main-content {
   display: none;
   min-height: 100vh;
@@ -105,7 +182,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 5rem;
   padding: 2rem;
 }
 
@@ -118,7 +195,7 @@ body {
 }
 
 #hero-text {
-  max-width: 500px;
+  max-width: 650px;
   opacity: 0;
   transition: opacity 0.7s ease;
 }
@@ -128,14 +205,61 @@ body {
 }
 
 #hero-text h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #000;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 #hero-text p {
   font-size: 1.1rem;
   color: #333;
   line-height: 1.7;
+  text-align: justify;
+}
+
+@media (max-width: 767px) {
+  #hero {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 4rem;
+  }
+
+  #profile-placeholder {
+    width: 200px;
+    height: 200px;
+  }
+
+  #hero-text h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #hero-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #hero {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  #profile-placeholder {
+    width: 220px;
+    height: 220px;
+  }
+
+  #hero-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #hero-text p {
+    text-align: center;
+  }
 }

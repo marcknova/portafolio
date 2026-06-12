@@ -10,6 +10,7 @@ setTimeout(() => {
 
   setTimeout(() => {
     loadingScreen.style.display = "none";
+    document.getElementById("top-bar").classList.add("visible");
     mainContent.style.display = "block";
     document.body.style.overflow = "auto";
 
@@ -20,8 +21,9 @@ setTimeout(() => {
       const targetCenterX = rect.left + rect.width / 2;
       const targetCenterY = rect.top + rect.height / 2;
 
-      floatingCircle.style.width = "260px";
-      floatingCircle.style.height = "260px";
+      const circleSize = rect.width + "px";
+      floatingCircle.style.width = circleSize;
+      floatingCircle.style.height = circleSize;
       floatingCircle.style.left = targetCenterX + "px";
       floatingCircle.style.top = targetCenterY + "px";
 
@@ -36,4 +38,4 @@ setTimeout(() => {
       }, 700);
     }, 150);
   }, 1200);
-}, 1500);
+}, 2000);
