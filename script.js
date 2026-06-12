@@ -111,6 +111,7 @@ const dotsWrapper = document.getElementById("gallery-dots");
 
 document.querySelectorAll(".btn-gallery").forEach((btn) => {
   btn.addEventListener("click", (e) => {
+    e.preventDefault();
     e.stopPropagation();
     const key = btn.dataset.project;
     const project = projects[key];
