@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="icon" type="/public/favicon.svg">
 
 <body>
     <div id="top-bar">
@@ -27,15 +27,153 @@
         <section id="hero">
             <div id="profile-placeholder"></div>
             <div id="hero-text">
-                <h1>&lt;Hello! Soy Marco Antonio Monterrosas&gt;</h1>
+                <h1>&lt; Hello! Soy Marco Monterrosas &gt;</h1>
                 <p>
-                    Soy un desarrollador de software con experiencia en el desarrollo de
-                    aplicaciones móviles y web, especializado en React Native, Expo,
-                    TypeScript y PHP.
+                    Frontend Developer con más de 3 años de experiencia construyendo
+                    aplicaciones web y móviles — desde plataformas CMS y automatización
+                    de flujos vía REST API hasta aplicaciones React Native en producción.
+                    Especializado en código limpio, interfaces responsivas y soluciones
+                    que reducen trabajo manual y mejoran rendimiento.
                 </p>
             </div>
         </section>
+
+        <section id="projects">
+            <div id="projects-header">
+                <h2>Mis Proyectos</h2>
+                <p>Lista de proyectos en los que he trabajado</p>
+            </div>
+            <div id="projects-grid">
+
+                <div class="project-card">
+                    <div class="card-img-wrapper">
+                        <img src="public/AppMobile/WIDO_1.jpg" alt="Wido App" />
+                        <div class="card-overlay">
+                            <p>Trabajé en el desarrollo de una aplicación móvil y optimización del backend,
+                                implementando pagos con Stripe, autenticación con React Context y navegación fluida con
+                                Expo Router.</p>
+                            <div class="card-links">
+                                <a href="https://github.com/MikePeregrina/AeroApp" target="_blank" title="GitHub"
+                                    rel="noopener">
+                                    <img src="https://cdn.simpleicons.org/github/ffffff" title="GitHub" />
+                                </a>
+                                <a href="public/CartaLaboral.pdf" target="_blank" title="PDF">
+                                    <img src="https://cdn.simpleicons.org/adobeacrobatreader/ffffff" title="PDF" />
+                                </a>
+                                <a href="https://widolearn.com/" target="_blank" title="Web" rel="noopener">
+                                    <img src="https://cdn.simpleicons.org/googlechrome/ffffff" title="Web" />
+                                </a>
+                                <button class="btn-gallery" data-project="wido">Ver galería</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Wido App</h3>
+                        <div class="card-tech">
+                            <img src="https://cdn.simpleicons.org/react/61DAFB" title="React Native" />
+                            <img src="https://cdn.simpleicons.org/expo/000000" title="Expo" />
+                            <img src="https://cdn.simpleicons.org/typescript/3178C6" title="TypeScript" />
+                            <img src="https://cdn.simpleicons.org/php/777BB4" title="PHP" />
+                            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" title="Tailwind CSS" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-img-wrapper">
+                        <img src="public/Gougo/gougo1.png" alt="Gougo Mobile" />
+                        <div class="card-overlay">
+                            <p>Migración de una aplicación de Kotlin a Expo con React Native, mejorando rendimiento y
+                                seguridad. Implementé Expo SQLite, Zustand y un Config Plugin para detectar Fake GPS.
+                            </p>
+                            <div class="card-links">
+                                <a href="https://github.com/marcknova/expo-device-time-check" target="_blank"
+                                    title="GitHub" rel="noopener">
+                                    <img src="https://cdn.simpleicons.org/github/ffffff" title="GitHub" />
+                                </a>
+                                <a href="https://www.figma.com/design/LDNOp9mKx6WZF5UfqNQqM9/Gougo-UI-UX?node-id=1403-4137"
+                                    target="_blank" title="Figma" rel="noopener">
+                                    <img src="https://cdn.simpleicons.org/figma/ffffff" title="Figma" />
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=mx.neaxis.promotor&hl=en"
+                                    target="_blank" title="Google Play" rel="noopener">
+                                    <img src="https://cdn.simpleicons.org/googleplay/ffffff" title="Google Play" />
+                                </a>
+                                <a href="https://www.npmjs.com/package/expo-device-time-check" target="_blank"
+                                    title="npm" rel="noopener">
+                                    <img src="https://cdn.simpleicons.org/npm/ffffff" title="NPM" />
+                                </a>
+                                <button class="btn-gallery" data-project="gougo">Ver galería</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Gougo Mobile</h3>
+                        <div class="card-tech">
+                            <img src="https://cdn.simpleicons.org/kotlin/7F52FF" title="Kotlin" />
+                            <img src="https://cdn.simpleicons.org/typescript/3178C6" title="TypeScript" />
+                            <img src="https://cdn.simpleicons.org/nodedotjs/339933" title="Node.js" />
+                            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" title="Tailwind CSS" />
+                            <img src="https://cdn.simpleicons.org/expo/000000" title="Expo" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-img-wrapper">
+                        <img src="public/TrackerApp/tracker1.png" alt="Seguimiento de gastos" />
+                        <div class="card-overlay">
+                            <p>Aplicación móvil en React Native para registrar y gestionar gastos. Interfaz intuitiva
+                                con almacenamiento local, permite acceder a la información sin conexión a internet.</p>
+                            <div class="card-links">
+                                <a href="https://github.com/marcknova/expense-tracker" target="_blank" title="GitHub"
+                                    rel="noopener">
+                                    <img src="https://cdn.simpleicons.org/github/ffffff" title="PDF" />
+                                </a>
+                                <a href="https://gilded-souffle-588f95.netlify.app/" target="_blank" title="Web"
+                                    rel="noopener">
+                                    <img src="https://cdn.simpleicons.org/googlechrome/ffffff" title="2" />
+                                </a>
+                                <button class="btn-gallery" data-project="tracker">Ver galería</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Aplicación de seguimiento de gastos</h3>
+                        <div class="card-tech">
+                            <img src="https://cdn.simpleicons.org/expo/000000" title="Expo" />
+                            <img src="https://cdn.simpleicons.org/typescript/3178C6" title="TypeScript" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </div>
+    <div id="modal-overlay">
+        <div id="modal-box">
+            <button id="modal-close">✕</button>
+
+            <div id="modal-gallery">
+                <button class="gallery-arrow" id="arrow-prev">‹</button>
+                <img id="modal-img" src="" alt="" />
+                <button class="gallery-arrow" id="arrow-next">›</button>
+                <div id="gallery-dots"></div>
+            </div>
+
+            <div id="modal-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>© 2026 marck</p>
+        <a href="https://github.com/marcknova" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" title="GitHub" />
+        </a>
+    </footer>
     <script src="script.js"></script>
 </body>
 
