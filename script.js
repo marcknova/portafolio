@@ -79,23 +79,19 @@ Más adelante asumí también responsabilidades en el backend PHP, donde reestru
 Mi rol fue mobile developer en un equipo de dos personas. Me encargué del login, la migración de la base de datos de Kotlin a Expo SQLite y la migración de pantallas del stack nativo a React Native con Expo. El reto técnico más significativo fue implementar detección de aplicaciones de GPS falso en tiempo real — una restricción de seguridad que el cliente exigía pero que Expo no soportaba de forma nativa en ese momento.\n
 Descartar Expo en favor de React Native estándar no era una opción que el cliente aprobara, por lo que investigué en la documentación oficial y encontré que era posible crear un módulo npm que expusiera código Java nativo desde TypeScript sin eyectar Expo. Diseñé, desarrollé y publiqué ese paquete — que permitió detectar y bloquear apps de terceros que alteraran la geolocalización del dispositivo, preservando la integridad de los check-in y check-out. El cliente solicitó conservar el paquete con documentación técnica, lo que habla del impacto que tuvo. La app supera las 100 descargas en Google Play.`,
   },
-  tracker: {
-    title: "Aplicación de seguimiento de gastos",
+  automarket: {
+    title: "AutoMarket Pro",
     images: [
-      "public/TrackerApp/tracker1.png",
-      "public/TrackerApp/tracker2.png",
-      "public/TrackerApp/tracker3.png",
-      "public/TrackerApp/tracker4.png",
-      "public/TrackerApp/tracker5.png",
-      "public/TrackerApp/tracker6.png",
+      "public/AutoMarketPro/automarket1.png",
+      "public/AutoMarketPro/automarket2.png",
+      "public/AutoMarketPro/automarket3.png",
+      "public/AutoMarketPro/automarket4.png",
     ],
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-    deserunt mollit anim id est laborum. Pellentesque habitant morbi tristique 
-    senectus et netus et malesuada fames ac turpis egestas.`,
+    description: `AutoMarket Pro es un marketplace full-stack de compra y venta de vehículos construido como proyecto de portafolio para demostrar integración real entre frontend moderno y backend Java en producción.
+
+El frontend usa React 19 con TypeScript, TanStack Router para navegación type-safe y TanStack Query para manejo de estado asíncrono y caché de datos. El backend está construido en Spring Boot 3.4 con PostgreSQL, exponiendo una API REST con autenticación JWT y validaciones de dominio.
+
+El diferenciador técnico es la integración de IA generativa vía Spring AI con Ollama corriendo localmente — permite generar descripciones de vehículos automáticamente a partir de sus atributos sin depender de servicios externos de pago. El stack de despliegue usa Docker y Oracle Cloud Always Free para infraestructura de costo cero.`,
   },
 };
 
